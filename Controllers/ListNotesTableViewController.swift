@@ -13,12 +13,14 @@ class ListNotesTableViewController: UITableViewController {
     var notes = [Note]() {
         didSet {
             tableView.reloadData()
+            //this reloads the tableview
         }
     }
     
     // 1
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notes.count
+        //counts notes
     }
     
     // 2
