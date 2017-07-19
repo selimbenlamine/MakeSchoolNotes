@@ -13,7 +13,6 @@ class ListNotesTableViewController: UITableViewController {
     var notes = [Note]() {
         didSet {
             tableView.reloadData()
-            //this reloads the tableview
         }
     }
     
